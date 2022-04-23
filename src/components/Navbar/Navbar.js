@@ -5,6 +5,8 @@ import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
 import { ThemeContext } from '../../contexts/theme'
 import { projects, skills, contact } from '../../portfolio'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import { constObject } from 'common/const'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -19,6 +21,13 @@ const Navbar = () => {
         style={{ display: showNavList ? 'flex' : null }}
         className='nav__list'
       >
+      <a
+        href={ constObject.githubAddress }
+        aria-label='github'
+        className='link link--icon'
+      >
+        <GitHubIcon />
+      </a>
         {projects.length ? (
           <li className='nav__list-item'>
             <a

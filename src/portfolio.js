@@ -1,3 +1,4 @@
+import { constObject } from "common/const"
 const header = {
   // 나의 시그니쳐 넣기
   // // all the properties are optional - can be left empty or deleted
@@ -5,12 +6,18 @@ const header = {
   // title: 'JS.',
 }
 
+
+const calculateYear = () => {
+  return new Date().getFullYear() - constObject.carrerStartYear
+}
+
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: '- 김태영 -',
   role: 'Cloud Computing Developer',
   description:
-    "풀스택 개발자를 목표로한 클라우드 컴퓨팅 개발자",
+    calculateYear() + "년간 Private 클라우드 연구개발 경력이 있는 풀스택 개발자가 목표인 클라우드 컴퓨팅 개발자입니다.  ",
+    
   social: {
     github: 'https://github.com/tkken12',
   },
@@ -60,7 +67,7 @@ const skills = [
 
 const contact = {
   // email is optional - if left empty Contact section won't show up
-  email: 'johnsmith@mail.com',
+  email: 'tkken12@mail.com',
 }
 
 export { header, about, projects, skills, contact }

@@ -2,6 +2,7 @@ import { header } from '../../portfolio'
 import Navbar from '../Navbar/Navbar'
 import "assets/css/Header.css" 
 
+
 const Header = () => {
   const { homepage, title } = header
 
@@ -16,6 +17,7 @@ const Header = () => {
           title
         )}
       </h3>
+      
       <Navbar />
     </header>
   )
