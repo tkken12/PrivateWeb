@@ -1,19 +1,18 @@
 const header = {
-  // all the properties are optional - can be left empty or deleted
-  homepage: 'https://rajshekhar26.github.io/cleanfolio',
-  title: 'JS.',
+  // 나의 시그니쳐 넣기
+  // // all the properties are optional - can be left empty or deleted
+  // homepage: 'https://rajshekhar26.github.io/cleanfolio',
+  // title: 'JS.',
 }
 
 const about = {
   // all the properties are optional - can be left empty or deleted
-  name: 'John Smith',
-  role: 'Front End Engineer',
+  name: '- 김태영 -',
+  role: 'Cloud Computing Developer',
   description:
-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
-  resume: 'https://example.com',
+    "풀스택 개발자를 목표로한 클라우드 컴퓨팅 개발자",
   social: {
-    linkedin: 'https://linkedin.com',
-    github: 'https://github.com',
+    github: 'https://github.com/tkken12',
   },
 }
 
@@ -49,18 +48,14 @@ const projects = [
 const skills = [
   // skills can be added or removed
   // if there are no skills, Skills section won't show up
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
   'React',
-  'Redux',
-  'SASS',
-  'Material UI',
+  'Node.JS',
+  'Go',
   'Git',
   'CI/CD',
-  'Jest',
-  'Enzyme',
+  'Docker',
+  'Kubernetes',
+  'LXD',
 ]
 
 const contact = {

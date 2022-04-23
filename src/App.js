@@ -1,28 +1,35 @@
 import { useContext } from 'react'
 import { ThemeContext } from './contexts/theme'
 import Header from './components/Header/Header'
-import About from './components/About/About'
-import Projects from './components/Projects/Projects'
-import Skills from './components/Skills/Skills'
+
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
-import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import './App.css'
+import { Route, Switch } from 'react-router-dom'
+import routes from "routes/routePath"
+import Main from 'views/main'
 
 const App = () => {
   const [{ themeName }] = useContext(ThemeContext)
 
+  const getRoutes = ( routes ) => { 
+    return routes.map( (prop, key ) => { 
+      return ( 
+        <Route 
+          path = { prop.path }
+          render = { ( props ) =>  <prop.component { ...props } /> }
+          key = { key }
+        />
+      )
+    })
+  }
+
   return (
     <div id='top' className={`${themeName} app`}>
-      <Header />
-
       <main>
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
+          <Header />
+            <Switch> { getRoutes( routes ) } </Switch>
       </main>
-
       <ScrollToTop />
       <Footer />
     </div>
