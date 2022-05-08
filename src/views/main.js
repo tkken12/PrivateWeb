@@ -6,8 +6,6 @@ import "App.css"
 
 const Main = ( props ) => { 
 
-    console.log( "in ", props )
-
     return ( 
         <div>
             <About />
