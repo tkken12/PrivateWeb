@@ -1,14 +1,16 @@
 {
-  "name": "cleanfolio",
+  "name": "tykim-polio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rajshekhar26.github.io/cleanfolio",
+  "homepage": "https://github.com/tkken12/PrivateWeb",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
     "gh-pages": "^3.2.3",
     "guacamole-common-js": "^1.4.0-a",
     "prop-types": "^15.7.2",

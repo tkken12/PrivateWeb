@@ -1,6 +1,14 @@
 const constObject = { 
-    carrerStartYear: 2018,
-    githubAddress: "https://github.com/tkken12"
+    "carrerStartYear": 2018,
+    "githubAddress": "https://github.com/tkken12",
+    "githubPrivateWeb": "https://github.com/tkken12/PrivateWeb",
 } 
 
-export { constObject }
+const axiosConf = { 
+    timeOut: 3000,
+}
+
+export { 
+            constObject, 
+            axiosConf
+       }

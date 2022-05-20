@@ -7,6 +7,7 @@ import './App.css'
 import { Route, Switch } from 'react-router-dom'
 import routes from "routes/routePath"
 import Redirection from 'views/redirection'
+import Contact from 'components/Contact/Contact'
 
 const App = () => {
   const [{ themeName }] = useContext(ThemeContext)
@@ -31,6 +32,7 @@ const App = () => {
                     { getRoutes( routes ) } 
                     <Route path="*" component={ Redirection } ></Route>
             </Switch>
+            <Contact />
             
       </main>
       <ScrollToTop />

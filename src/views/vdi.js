@@ -1,12 +1,10 @@
-import { useEffect } from "react";
+import Service from "components/Guacamole/Service"
 
 const Vdi = ( props ) => { 
 
-
-
     return (
         <div>
-            vdi section
+            <Service />
         </div>
     )
 
