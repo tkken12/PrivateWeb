@@ -1,5 +1,5 @@
-import Main from "views/main"
-import Vdi from "views/vdi"
+import Main from "views/Main"
+import Vdi from "views/VDI"
 
 let routePath = [
     { 

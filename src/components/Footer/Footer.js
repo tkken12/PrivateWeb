@@ -1,4 +1,4 @@
-import { constObject } from 'common/const'
+import { constObject } from 'common/Const'
 import './Footer.css'
 
 const Footer = () => (

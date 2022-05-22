@@ -4,12 +4,12 @@ import Brightness2Icon from '@material-ui/icons/Brightness2'
 import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
 import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
-import { ThemeContext } from '../../contexts/theme'
+import { ThemeContext } from '../../contexts/Theme'
 import { projects, skills, contact } from '../../portfolio'
 import GitHubIcon from '@material-ui/icons/GitHub'
-import { constObject } from 'common/const'
+import { constObject } from 'common/Const'
 import './Navbar.css'
-import routePath from 'routes/routePath'
+import routePath from 'routes/RoutePath'
 
 const Navbar = () => {
   const [{ themeName, toggleTheme }] = useContext(ThemeContext)
@@ -41,10 +41,11 @@ const Navbar = () => {
                           <Link to={route.path}>{ route.navString }</Link>
                         </a>
                       </li>
-                  )
+                   )
           }) 
         }
       </ul>
+      {/* TODO -- 아이콘과 메뉴 아이템 간 align이 맞지 않음 */}
       <button
         type='button'
         onClick={toggleTheme}

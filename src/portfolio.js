@@ -1,9 +1,6 @@
-import { constObject } from "common/const"
+import { constObject } from "common/Const"
 const header = {
   // 나의 시그니쳐 넣기
-  // // all the properties are optional - can be left empty or deleted
-  // homepage: 'https://rajshekhar26.github.io/cleanfolio',
-  // title: 'JS.',
 }
 
 
@@ -12,7 +9,6 @@ const calculateYear = () => {
 }
 
 const about = {
-  // all the properties are optional - can be left empty or deleted
   name: '- 김태영 -',
   role: 'Cloud Computing Developer',
   description:
@@ -23,9 +19,8 @@ const about = {
   },
 }
 
+// TODO - DB에서 가져오는걸로 변경해야함.
 const projects = [
-  // projects can be added an removed
-  // if there are no projects, Projects section won't show up
   {
     name: 'Project 1',
     description:
@@ -52,22 +47,11 @@ const projects = [
   },
 ]
 
-const skills = [
-  // skills can be added or removed
-  // if there are no skills, Skills section won't show up
-  'React',
-  'Node.JS',
-  'Go',
-  'Git',
-  'CI/CD',
-  'Docker',
-  'Kubernetes',
-  'LXD',
-]
+const skills = [ 'React', 'Node.JS',
+                 'Go', 'Git', 'CI/CD',
+                 'Docker', 'Kubernetes', 'LXD',
+               ]
 
-const contact = {
-  // email is optional - if left empty Contact section won't show up
-  email: 'tkken12@mail.com',
-}
+const contact = { email: 'tkken12@gmail.com' }
 
 export { header, about, projects, skills, contact }

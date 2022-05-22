@@ -1,6 +1,16 @@
+import APICaller from "components/APIController/APICaller"
+import { APIPath } from "components/APIController/APIPath"
+import { useEffect, useState } from "react"
 import "./Service.css"
 
 const Service = () => { 
+
+    const [ vdiItems, setVdiItems ] = useState([])
+    
+    useEffect( async() => { 
+        setVdiItems( await APICaller( { "method": "GET", "reqPath": APIPath.VDI.GET.STATUS, "query": "" })) 
+    }, [])
+
     return (
         <section id="vdi" className="section">
             <h2>

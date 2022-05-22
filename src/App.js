@@ -1,12 +1,12 @@
 import { useContext } from 'react'
-import { ThemeContext } from './contexts/theme'
+import { ThemeContext } from './contexts/Theme'
 import Header from './components/Header/Header'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import Footer from './components/Footer/Footer'
 import './App.css'
 import { Route, Switch } from 'react-router-dom'
-import routes from "routes/routePath"
-import Redirection from 'views/redirection'
+import routes from "routes/RoutePath"
+import Redirection from 'views/Redirection'
 import Contact from 'components/Contact/Contact'
 
 const App = () => {
