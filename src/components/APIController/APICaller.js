@@ -1,7 +1,6 @@
 import { APIInstance } from "components/APIController/AxiosInit"
 
 const baseURL = process.env.REACT_APP_NODE_ADDRESS_V1
-console.log( baseURL )
 const RequestType = {
     GET   : ( args ) => APIInstance.get   ( baseURL + args["reqPath"], { params: args["query"] } ),
     POST  : ( args ) => APIInstance.post  ( baseURL + args["reqPath"], { params: args["query"] } ),
@@ -10,11 +9,8 @@ const RequestType = {
 }
 
 const APICaller = async( args ) => { 
-    try{ 
-        const res = await RequestType[args.method](args)
-        return res["data"]
-
-    } catch (err) { 
+    try{ return await RequestType[args.method](args) }
+    catch (err) { 
         console.log("failed to get ", err)
         return []
     }
